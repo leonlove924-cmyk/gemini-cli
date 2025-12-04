@@ -69,6 +69,24 @@
     "README.md",
     "LICENSE"
   ],
+  "contributes": {
+    "configuration": {
+      "title": "Settings Editor Test Extension",
+      "type": "object",
+      "properties": {
+        "settingsEditorTestExtension.booleanExample": {
+          "type": "boolean",
+          "default": true,
+          "description": "Boolean Example"
+        },
+        "settingsEditorTestExtension.stringExample": {
+          "type": "string",
+          "default": "Hello World",
+          "description": "String Example"
+        }
+      }
+    }
+  },
   "devDependencies": {
     "@types/marked": "^5.0.2",
     "@types/mime-types": "^3.0.1",
